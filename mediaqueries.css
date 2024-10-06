@@ -1,0 +1,249 @@
+/* nav Menu*/
+@media (max-width: 995px) {
+  nav {
+    position: absolute;
+    /* display: none; */
+    /* opacity: 0; */
+    top: 0;
+    right: -40%;
+    width: 40%;
+    border-left: 3px solid #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+    border-bottom-left-radius: 2rem;
+    padding: 1rem solid;
+    background-color: #161616;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  }
+  nav.active {
+    display: block;
+  }
+  nav a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+  nav a:hover,
+  nav a.active {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-bottom: 0.5rem solid #b74b4b;
+  }
+  /* .hamburger{
+    width: 68px;
+    height: auto;
+    padding: 5px;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    left: 90%;
+    top: 12.5%;
+    &:hover{
+      cursor: pointer;
+    }
+  } */
+  #hamburger-icon {
+    display: block;
+    font-size: 2.5rem;
+    position: fixed;
+    display: block;
+    right: 5%;
+    top: 7.5%; 
+    cursor:pointer;
+    z-index: 100;
+    color: #fff;
+  }
+}
+
+/* 991 ya use choti screen size hogi */
+@media screen And (max-width: 991px) {
+  .container-1 {
+    overflow: hidden;
+  }
+  body {
+    width: 550px;
+  }
+
+  .fa-bars {
+    color: #b74b4b;
+  }
+  .logo {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    filter: drop-shadow(1px 1px 2px #b74b4b);
+    position: initial;
+    /* width: 250px; */
+  }
+  .bold {
+    font-size: 4.5rem;
+  }
+  .hero-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-top: 38%;
+  }
+  .left-panel a.btn-1 {
+    display: flex;
+    text-align: center;
+    width: 300px;
+    position: absolute;
+    padding: 5px 10px;
+  }
+  .underline {
+    margin: 0 110px 0 0;
+  }
+  .right-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 360px;
+    position: relative;
+    margin-left: 75px;
+    margin: auto;
+    background-color: #b74b4b;
+  }
+  .hero-img {
+    position: absolute;
+    width: 98vw;
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .skills {
+    margin: 200px 0 0 50px;
+    font-size: 5.5rem;
+  }
+  .container-skills {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 0;
+    width: 550px;
+    flex-direction: row;
+    overflow: hidden;
+  }
+  .box {
+    min-width: 180px;
+    min-height: fit-content;
+    margin-left: 60px;
+  }
+  .project-heading {
+    margin-left: 25%;
+    width: 350px;
+    height: 120px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .project-heading .project {
+    font-size: 4rem;
+  }
+
+  .card__container {
+    display: grid;
+    margin-left: 90px;
+    row-gap: 1.5rem;
+    grid-template-columns: repeat(1, 1fr);
+    width: 450px;
+    height: auto;
+  }
+  .card__data {
+    width: 300px;
+    margin-left: 2.5rem;
+  }
+  .cta-section {
+    width: 510px;
+    height: 300px;
+    border-radius: 5px;
+    margin-left: 50px;
+  }
+  .cta-section .btn-primary {
+    font-size: 2rem;
+  }
+  footer {
+    width: 600px;
+    height: 350px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .col-md-6-2 {
+    margin-left: 40px;
+  }
+  .social-links-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    font-size: 2rem;
+    color: #b74b4b;
+  }
+  .form-container {
+    max-width: 100%;
+    height: 600px;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:50px;
+    margin-top: 200px;
+    margin-bottom: 150px;
+    position: relative;
+    left: 0;
+  }
+  .input-container {
+    position: absolute;
+    max-width: 100%;
+    padding: 2px;
+  }
+  .submit {
+    font-size: 2rem;
+    font: bold;
+  }
+
+  .more {
+    font-size: 2rem;
+    margin: 25px;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px 18px;
+    background-color: #007bff;
+    text-decoration: underline 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .arrow {
+    margin-bottom: 9px;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+}
+
+/* Show the hamburger menu */
+/* #hamburger-icon{
+    display: block;
+    position: absolute;
+    padding: 5px;
+    right: 0;
+    top: 0;
+  } */
+
+/* Show the menu when active */
+/* .nav-list ul.active {
+    display: flex;
+    position: absolute;
+    border: 2px solid red;
+  } */
