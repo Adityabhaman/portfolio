@@ -88,11 +88,11 @@ tl4.to("nav ", {
   right: 0,
   duration: 0.5,
 });
-// tl4.from("nav a", {
-//   x: 1,
-//   duration: 0.1,
-//   stagger: 0.28,
-// });
+tl4.from("nav a", {
+  x: 5,
+  duration: 0.1,
+  stagger: 0.2,
+});
 tl4.pause();
 var menu = document.getElementById("hamburger-icon");
 var nav = document.getElementById("nav-1");
