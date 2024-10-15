@@ -576,6 +576,10 @@ footer .social-links a:hover {
   color: #000;
   font-weight: 50;
 }
+.form:focus{
+  border: 2px solid yellow;
+  border-radius: 20px;
+}
 .btn-2 {
   display: flex;
   align-items: center;

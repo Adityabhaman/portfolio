@@ -1,4 +1,7 @@
-let submit = document.querySelector(".submit")
-submit.addEventListener("click",()=>{
-alert("Loading....")
-})
+document.addEventListener(
+  "contextmenu",
+  (e) => {
+    e.preventDefault();
+  },
+  false
+);
