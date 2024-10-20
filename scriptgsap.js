@@ -42,13 +42,20 @@ function tl2() {
     scrollTrigger: {
       trigger: ".project",
       scroller: "body",
-      start: "top 50%",
-      end: "top 0",
+      start: "top 75%",
+      end: "top 25%",
+      // ease: "power1.inout",
+      // stagger: {
+      //   grid: [7, 15],
+      //   from: "End",
+      //   amount: 1.5,
       scrub: 2,
+      // markers:true,
     },
   });
-  tl2.from(".card__container article", {
+  tl2.from(".conatiner-card .card__container", {
     x: 0,
+    // duration: 1,
     opacity: 0,
   });
 }
@@ -84,22 +91,29 @@ tl3();
 
 var tl4 = gsap.timeline();
 
-tl4.to("nav ", {
+tl4.to("#nav-1",{
   right: 0,
-  duration: 0.5,
-});
-tl4.from("nav a", {
-  x: 5,
   duration: 0.1,
-  stagger: 0.2,
+});
+tl4.from("#nav-1 a",{
+  x: 15,
+  duration: 0.1,
+  // stagger: 0.3,
+  // opacity:0,
 });
 tl4.pause();
 var menu = document.getElementById("hamburger-icon");
+var cross = document.getElementById("hamburger-icon-1");
 var nav = document.getElementById("nav-1");
 menu.addEventListener("click", () => {
   tl4.play();
+  menu.style.display = "none";
+  cross.style.display ="block";
 });
+
 var nav = document.getElementById("nav-1");
-menu.addEventListener("dblclick", () => {
-tl4.reverse();
+cross.addEventListener("click", () => {
+  tl4.reverse();
+  menu.style.display ="block";
+  cross.style.display ="none"
 });

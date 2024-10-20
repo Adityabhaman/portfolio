@@ -1,7 +1,7 @@
-document.addEventListener(
-  "contextmenu",
-  (e) => {
-    e.preventDefault();
-  },
-  false
-);
+// document.addEventListener(
+//   "contextmenu",
+//   (e) => {
+//     e.preventDefault();
+//   },
+//   false
+// );

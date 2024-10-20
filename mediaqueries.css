@@ -4,14 +4,14 @@
     position: absolute;
     /* display: none; */
     /* opacity: 0; */
-    top: 0;
+    top: 5%;
     right: -40%;
     width: 40%;
     border-left: 3px solid #b74b4b;
     border-bottom: 3px solid #b74b4b;
     border-bottom-left-radius: 2rem;
     padding: 1rem solid;
-    background-color: #161616;
+    background-color: #16161659;
     border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
   }
   nav.active {
@@ -20,7 +20,7 @@
   nav a {
     display: block;
     font-size: 2rem;
-    margin: 3rem 0;
+    margin: 4rem 0;
   }
   nav a:hover,
   nav a.active {
@@ -33,6 +33,16 @@
     font-size: 2.5rem;
     position: fixed;
     display: block;
+    right: 5%;
+    top: 7.5%; 
+    cursor:pointer;
+    z-index: 100;
+    color: #fff;
+  }
+  #hamburger-icon-1 {
+    display: none;
+    font-size: 2.5rem;
+    position: fixed;
     right: 5%;
     top: 7.5%; 
     cursor:pointer;

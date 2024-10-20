@@ -19,7 +19,7 @@ body {
   background-attachment: fixed;
 }
 header {
-  margin-top: 20px;
+  margin-top: 0px;
   position: fixed;
   top: 0;
   left: 0;
@@ -42,9 +42,9 @@ header {
     transform: scale(1.1);
   }
 }
-nav {
-  margin-right: 0px;
-}
+/* nav {
+  margin-right: 75px;
+} */
 nav a {
   font-size: 1.8rem;
   color: #fff;
@@ -60,6 +60,10 @@ nav a.active {
   border-bottom: 3px solid #b74b4b;
 }
 #hamburger-icon {
+  display: none;
+  cursor: pointer;
+}
+#hamburger-icon-1 {
   display: none;
   cursor: pointer;
 }
@@ -189,6 +193,7 @@ h3 {
 .container-skills {
   white-space: nowrap;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 .scroll-1 {
   display: inline-block;
@@ -282,6 +287,7 @@ h3 {
   width: 348px;
   border-radius: 1.5rem;
   margin-left: 25px;
+  object-fit: cover;
 }
 .card__data {
   width: 316px;
@@ -298,31 +304,31 @@ h3 {
   transition: opacity 1s 1s;
 }
 .card__data a {
-  color: blue;
+  color: #b74b4b;
   font-size: 1.5rem;
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid #b74b4b;
   &:hover {
-    color: #b74b4b;
-    border-bottom: 1px solid #b74b4b;
+    color: #720026;
+    border-bottom: 1px solid #720026;
   }
 }
 .card__description {
   display: block;
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-bottom: 0.25rem;
-  color: white;
+  color: #0d1321;
 }
 .card__tittle {
   font-size: 1.5rem;
   font-weight: 500;
-  color: white;
+  color: #161a1d;
   margin-bottom: 0.75rem;
 }
+
 .card__button {
   text-decoration: none;
   font-size: 0.813rem;
   font-weight: 500;
-  color: hsla(82, 60%, 28%);
 }
 .card__button:hover {
   text-decoration: underline;
