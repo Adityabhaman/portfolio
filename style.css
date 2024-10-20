@@ -244,11 +244,11 @@ h3 {
 
 /*slider css*/
 
-@keyframes slide{
-  from{
+@keyframes slide {
+  from {
     transform: translateX(0);
   }
-  to{
+  to {
     transform: translateX(-100%);
   }
 }
@@ -521,7 +521,6 @@ footer .social-links a:hover {
   width: 48%;
 }
 
-
 .form-container {
   max-width: 28vw;
   height: 500px;
@@ -582,7 +581,7 @@ footer .social-links a:hover {
   color: #000;
   font-weight: 50;
 }
-.form:focus{
+.form:focus {
   border: 2px solid yellow;
   border-radius: 20px;
 }

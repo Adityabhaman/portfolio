@@ -91,11 +91,11 @@ tl3();
 
 var tl4 = gsap.timeline();
 
-tl4.to("#nav-1",{
+tl4.to("#nav-1", {
   right: 0,
   duration: 0.1,
 });
-tl4.from("#nav-1 a",{
+tl4.from("#nav-1 a", {
   x: 15,
   duration: 0.1,
   // stagger: 0.3,
@@ -108,12 +108,12 @@ var nav = document.getElementById("nav-1");
 menu.addEventListener("click", () => {
   tl4.play();
   menu.style.display = "none";
-  cross.style.display ="block";
+  cross.style.display = "block";
 });
 
 var nav = document.getElementById("nav-1");
 cross.addEventListener("click", () => {
   tl4.reverse();
-  menu.style.display ="block";
-  cross.style.display ="none"
+  menu.style.display = "block";
+  cross.style.display = "none";
 });
